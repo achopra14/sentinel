@@ -16,7 +16,7 @@ def test_trivechaind():
     config_text = TrivechainConfig.slurp_config_file(config.trivechain_conf)
     network = 'mainnet'
     is_testnet = False
-    genesis_hash = u'00000ffd590b1485b3caadc19b22e6379c733355108f107a430458cdf3407ab6'
+    genesis_hash = u'000008ad295e16d2a5456aef65cb1c28139835aba6a340d0be0fb8ca2b2e9e26'
     for line in config_text.split("\n"):
         if line.startswith('testnet=1'):
             network = 'testnet'
